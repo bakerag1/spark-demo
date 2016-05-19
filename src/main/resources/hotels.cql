@@ -1,0 +1,1 @@
+insert into hotels (id, name, phone, address, pois) values (uuid(), 'Stagger Inn', '555-122-3344', '123 Mockingbird Ln.', [uuid(),uuid()]);
