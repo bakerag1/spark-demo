@@ -4,7 +4,7 @@ node('remote') {
     echo "Building version ${v}"
   }
   def mvnHome = tool 'M3'
-  sh "${mvnHome}/bin/mvn -B install 
+  sh "${mvnHome}/bin/mvn -B install" 
 }
 def version() {
   def matcher = readFile('pom.xml') =~ '<version>(.+)</version>'
